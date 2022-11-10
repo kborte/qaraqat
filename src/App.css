@@ -1,38 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Manrope', sans-serif;
+    color: #333333
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
 .App {
-  text-align: center;
+    display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    width: 50px;
+    height: 100px;
+    border: 1px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.subtitles {
+    display: flex;
+    gap: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tooltip {
+    position: relative;
+    display: inline-block;
 }
 
-.App-link {
-  color: #61dafb;
+.tooltip .tool {
+    visibility: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tooltip:hover .tool {
+    visibility: visible;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.letter {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.tool {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    z-index: 1;
+    width: 300px;
+    background-color: white;
+    color: black;
+    border: 1px black solid;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbutton{
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem
+}
+
+.align-center{
+    display: flex;
+    align-items: center;
+}
+
+.margin-left{
+    margin-left: 1vw;
+}
+
+.margin-top{
+    margin-top: 5vw;
+}
+
+.justify-align-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60vw;
+}
+
+.flex{
+    display: flex;
 }
